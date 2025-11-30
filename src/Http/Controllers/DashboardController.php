@@ -1,11 +1,11 @@
 <?php
 
-namespace Yousef\FreePbx\Http\Controllers;
+namespace yousefkadah\FreePbx\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Yousef\FreePbx\Dashboard\DashboardService;
+use yousefkadah\FreePbx\Dashboard\DashboardService;
 
 class DashboardController extends Controller
 {

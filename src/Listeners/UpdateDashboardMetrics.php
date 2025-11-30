@@ -1,9 +1,9 @@
 <?php
 
-namespace Yousef\FreePbx\Listeners;
+namespace yousefkadah\FreePbx\Listeners;
 
 use Illuminate\Support\Facades\Cache;
-use Yousef\FreePbx\Events\Ami\QueueMemberStatusEvent;
+use yousefkadah\FreePbx\Events\Ami\QueueMemberStatusEvent;
 
 class UpdateDashboardMetrics
 {

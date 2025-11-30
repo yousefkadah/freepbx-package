@@ -1,9 +1,9 @@
 <?php
 
-namespace Yousef\FreePbx\Tests;
+namespace yousefkadah\FreePbx\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Yousef\FreePbx\FreePbxServiceProvider;
+use yousefkadah\FreePbx\FreePbxServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

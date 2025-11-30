@@ -1,8 +1,8 @@
 <?php
 
-namespace Yousef\FreePbx\Ami\Actions;
+namespace yousefkadah\FreePbx\Ami\Actions;
 
-use Yousef\FreePbx\Ami\AmiConnection;
+use yousefkadah\FreePbx\Ami\AmiConnection;
 
 class OriginateAction
 {

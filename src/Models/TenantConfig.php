@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Models;
+namespace yousefkadah\FreePbx\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -25,7 +25,7 @@ class TenantConfig extends Model
         $config = json_decode($value, true) ?? [];
         
         if (config('freepbx.multi_tenant.encrypt_credentials')) {
-            $repository = new \Yousef\FreePbx\Tenancy\TenantConfigRepository();
+            $repository = new \yousefkadah\FreePbx\Tenancy\TenantConfigRepository();
             return $repository->decrypt($config);
         }
 
@@ -38,7 +38,7 @@ class TenantConfig extends Model
     public function setConfigAttribute($value): void
     {
         if (config('freepbx.multi_tenant.encrypt_credentials')) {
-            $repository = new \Yousef\FreePbx\Tenancy\TenantConfigRepository();
+            $repository = new \yousefkadah\FreePbx\Tenancy\TenantConfigRepository();
             $value = $repository->encrypt($value);
         }
 

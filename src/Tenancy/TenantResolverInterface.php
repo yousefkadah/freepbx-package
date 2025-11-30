@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Tenancy;
+namespace yousefkadah\FreePbx\Tenancy;
 
 interface TenantResolverInterface
 {

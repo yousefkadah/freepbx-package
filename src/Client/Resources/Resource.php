@@ -1,8 +1,8 @@
 <?php
 
-namespace Yousef\FreePbx\Client\Resources;
+namespace yousefkadah\FreePbx\Client\Resources;
 
-use Yousef\FreePbx\Client\FreePbxClient;
+use yousefkadah\FreePbx\Client\FreePbxClient;
 
 abstract class Resource
 {

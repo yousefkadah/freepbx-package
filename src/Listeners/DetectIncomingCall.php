@@ -1,10 +1,10 @@
 <?php
 
-namespace Yousef\FreePbx\Listeners;
+namespace yousefkadah\FreePbx\Listeners;
 
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\CallPopup\CallPopupService;
-use Yousef\FreePbx\Events\Ami\NewchannelEvent;
+use yousefkadah\FreePbx\CallPopup\CallPopupService;
+use yousefkadah\FreePbx\Events\Ami\NewchannelEvent;
 
 class DetectIncomingCall
 {

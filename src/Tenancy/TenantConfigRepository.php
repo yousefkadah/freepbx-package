@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Tenancy;
+namespace yousefkadah\FreePbx\Tenancy;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Facades\Crypt;

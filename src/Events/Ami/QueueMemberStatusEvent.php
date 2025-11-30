@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Events\Ami;
+namespace yousefkadah\FreePbx\Events\Ami;
 
 class QueueMemberStatusEvent
 {

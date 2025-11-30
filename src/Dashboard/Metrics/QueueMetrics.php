@@ -1,8 +1,8 @@
 <?php
 
-namespace Yousef\FreePbx\Dashboard\Metrics;
+namespace yousefkadah\FreePbx\Dashboard\Metrics;
 
-use Yousef\FreePbx\Client\FreePbxClient;
+use yousefkadah\FreePbx\Client\FreePbxClient;
 
 class QueueMetrics
 {

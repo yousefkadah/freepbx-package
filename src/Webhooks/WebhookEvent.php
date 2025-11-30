@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Webhooks;
+namespace yousefkadah\FreePbx\Webhooks;
 
 abstract class WebhookEvent
 {

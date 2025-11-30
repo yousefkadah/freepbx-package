@@ -1,10 +1,10 @@
 <?php
 
-namespace Yousef\FreePbx\Console\Commands;
+namespace yousefkadah\FreePbx\Console\Commands;
 
 use Illuminate\Console\Command;
 use React\EventLoop\Loop;
-use Yousef\FreePbx\Ami\AmiManager;
+use yousefkadah\FreePbx\Ami\AmiManager;
 
 class StartAmiListenerCommand extends Command
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Yousef\FreePbx\Ami;
+namespace yousefkadah\FreePbx\Ami;
 
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Exceptions\AmiException;
-use Yousef\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Exceptions\AmiException;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
 
 class AmiManager
 {

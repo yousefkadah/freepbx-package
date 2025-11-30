@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Models;
+namespace yousefkadah\FreePbx\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;

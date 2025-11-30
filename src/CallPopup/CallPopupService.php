@@ -1,10 +1,10 @@
 <?php
 
-namespace Yousef\FreePbx\CallPopup;
+namespace yousefkadah\FreePbx\CallPopup;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Events\IncomingCallEvent;
+use yousefkadah\FreePbx\Events\IncomingCallEvent;
 
 class CallPopupService
 {

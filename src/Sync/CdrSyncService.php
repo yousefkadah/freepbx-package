@@ -1,11 +1,11 @@
 <?php
 
-namespace Yousef\FreePbx\Sync;
+namespace yousefkadah\FreePbx\Sync;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Models\CallDetailRecord;
-use Yousef\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Models\CallDetailRecord;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
 
 class CdrSyncService
 {

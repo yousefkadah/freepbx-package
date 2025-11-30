@@ -1,16 +1,16 @@
 <?php
 
-namespace Yousef\FreePbx;
+namespace yousefkadah\FreePbx;
 
 use Illuminate\Support\ServiceProvider;
-use Yousef\FreePbx\Ami\AmiManager;
-use Yousef\FreePbx\Client\FreePbxClient;
-use Yousef\FreePbx\Console\Commands\SyncCdrCommand;
-use Yousef\FreePbx\Console\Commands\StartAmiListenerCommand;
-use Yousef\FreePbx\Dashboard\DashboardService;
-use Yousef\FreePbx\Sync\CdrSyncService;
-use Yousef\FreePbx\Tenancy\TenantManager;
-use Yousef\FreePbx\Webhooks\WebhookDispatcher;
+use yousefkadah\FreePbx\Ami\AmiManager;
+use yousefkadah\FreePbx\Client\FreePbxClient;
+use yousefkadah\FreePbx\Console\Commands\SyncCdrCommand;
+use yousefkadah\FreePbx\Console\Commands\StartAmiListenerCommand;
+use yousefkadah\FreePbx\Dashboard\DashboardService;
+use yousefkadah\FreePbx\Sync\CdrSyncService;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Webhooks\WebhookDispatcher;
 
 class FreePbxServiceProvider extends ServiceProvider
 {
@@ -122,18 +122,18 @@ class FreePbxServiceProvider extends ServiceProvider
         // Register AMI event listeners
         if (config('freepbx.events.dispatch_laravel_events', true)) {
             $events->listen(
-                \Yousef\FreePbx\Events\Ami\NewChannelEvent::class,
-                \Yousef\FreePbx\Listeners\DetectIncomingCall::class
+                \yousefkadah\FreePbx\Events\Ami\NewChannelEvent::class,
+                \yousefkadah\FreePbx\Listeners\DetectIncomingCall::class
             );
 
             $events->listen(
-                \Yousef\FreePbx\Events\IncomingCallEvent::class,
-                \Yousef\FreePbx\Listeners\BroadcastIncomingCall::class
+                \yousefkadah\FreePbx\Events\IncomingCallEvent::class,
+                \yousefkadah\FreePbx\Listeners\BroadcastIncomingCall::class
             );
 
             $events->listen(
-                \Yousef\FreePbx\Events\Ami\QueueMemberStatusEvent::class,
-                \Yousef\FreePbx\Listeners\UpdateDashboardMetrics::class
+                \yousefkadah\FreePbx\Events\Ami\QueueMemberStatusEvent::class,
+                \yousefkadah\FreePbx\Listeners\UpdateDashboardMetrics::class
             );
         }
     }

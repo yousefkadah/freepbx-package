@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Yousef\FreePbx\Http\Controllers\CallController;
-use Yousef\FreePbx\Http\Controllers\DashboardController;
+use yousefkadah\FreePbx\Http\Controllers\CallController;
+use yousefkadah\FreePbx\Http\Controllers\DashboardController;
 
 Route::prefix('api/freepbx')->middleware(['api'])->group(function () {
     // Dashboard endpoints

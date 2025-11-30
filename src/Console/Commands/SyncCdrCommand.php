@@ -1,9 +1,9 @@
 <?php
 
-namespace Yousef\FreePbx\Console\Commands;
+namespace yousefkadah\FreePbx\Console\Commands;
 
 use Illuminate\Console\Command;
-use Yousef\FreePbx\Sync\CdrSyncService;
+use yousefkadah\FreePbx\Sync\CdrSyncService;
 
 class SyncCdrCommand extends Command
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Yousef\FreePbx\Listeners;
+namespace yousefkadah\FreePbx\Listeners;
 
-use Yousef\FreePbx\Events\IncomingCallEvent;
+use yousefkadah\FreePbx\Events\IncomingCallEvent;
 
 class BroadcastIncomingCall
 {

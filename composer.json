@@ -38,12 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Yousef\\FreePbx\\": "src/"
+            "yousefkadah\\FreePbx\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yousef\\FreePbx\\Tests\\": "tests/"
+            "yousefkadah\\FreePbx\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -55,10 +55,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Yousef\\FreePbx\\FreePbxServiceProvider"
+                "yousefkadah\\FreePbx\\FreePbxServiceProvider"
             ],
             "aliases": {
-                "FreePbx": "Yousef\\FreePbx\\Facades\\FreePbx"
+                "FreePbx": "yousefkadah\\FreePbx\\Facades\\FreePbx"
             }
         }
     },

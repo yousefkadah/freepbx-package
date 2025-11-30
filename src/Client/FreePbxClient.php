@@ -1,15 +1,15 @@
 <?php
 
-namespace Yousef\FreePbx\Client;
+namespace yousefkadah\FreePbx\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Client\Resources\ExtensionResource;
-use Yousef\FreePbx\Client\Resources\QueueResource;
-use Yousef\FreePbx\Exceptions\ApiException;
-use Yousef\FreePbx\Exceptions\ConfigurationException;
-use Yousef\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Client\Resources\ExtensionResource;
+use yousefkadah\FreePbx\Client\Resources\QueueResource;
+use yousefkadah\FreePbx\Exceptions\ApiException;
+use yousefkadah\FreePbx\Exceptions\ConfigurationException;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
 
 class FreePbxClient
 {

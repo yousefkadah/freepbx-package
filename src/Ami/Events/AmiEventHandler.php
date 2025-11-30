@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Ami\Events;
+namespace yousefkadah\FreePbx\Ami\Events;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
@@ -58,7 +58,7 @@ class AmiEventHandler
             Event::dispatch(new $eventClass($data, $this->tenantId));
         } else {
             // Dispatch generic AMI event
-            Event::dispatch(new \Yousef\FreePbx\Events\Ami\GenericAmiEvent($eventType, $data, $this->tenantId));
+            Event::dispatch(new \yousefkadah\FreePbx\Events\Ami\GenericAmiEvent($eventType, $data, $this->tenantId));
         }
     }
 
@@ -67,6 +67,6 @@ class AmiEventHandler
      */
     protected function getEventClass(string $eventType): string
     {
-        return "Yousef\\FreePbx\\Events\\Ami\\{$eventType}Event";
+        return "yousefkadah\\FreePbx\\Events\\Ami\\{$eventType}Event";
     }
 }

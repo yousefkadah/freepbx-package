@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Events;
+namespace yousefkadah\FreePbx\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;

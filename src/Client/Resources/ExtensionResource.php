@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Client\Resources;
+namespace yousefkadah\FreePbx\Client\Resources;
 
 class ExtensionResource extends Resource
 {

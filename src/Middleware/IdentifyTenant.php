@@ -1,10 +1,10 @@
 <?php
 
-namespace Yousef\FreePbx\Middleware;
+namespace yousefkadah\FreePbx\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Yousef\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
 
 class IdentifyTenant
 {

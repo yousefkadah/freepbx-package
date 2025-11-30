@@ -1,12 +1,12 @@
 <?php
 
-namespace Yousef\FreePbx\Http\Controllers;
+namespace yousefkadah\FreePbx\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Yousef\FreePbx\Ami\Actions\OriginateAction;
-use Yousef\FreePbx\Ami\AmiManager;
+use yousefkadah\FreePbx\Ami\Actions\OriginateAction;
+use yousefkadah\FreePbx\Ami\AmiManager;
 
 class CallController extends Controller
 {

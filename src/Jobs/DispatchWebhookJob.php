@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Jobs;
+namespace yousefkadah\FreePbx\Jobs;
 
 use GuzzleHttp\Client;
 use Illuminate\Bus\Queueable;
@@ -9,8 +9,8 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Models\WebhookLog;
-use Yousef\FreePbx\Webhooks\WebhookEvent;
+use yousefkadah\FreePbx\Models\WebhookLog;
+use yousefkadah\FreePbx\Webhooks\WebhookEvent;
 
 class DispatchWebhookJob implements ShouldQueue
 {

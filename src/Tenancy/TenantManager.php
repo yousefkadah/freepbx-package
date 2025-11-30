@@ -1,11 +1,11 @@
 <?php
 
-namespace Yousef\FreePbx\Tenancy;
+namespace yousefkadah\FreePbx\Tenancy;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Cache;
-use Yousef\FreePbx\Exceptions\ConfigurationException;
-use Yousef\FreePbx\Models\TenantConfig;
+use yousefkadah\FreePbx\Exceptions\ConfigurationException;
+use yousefkadah\FreePbx\Models\TenantConfig;
 
 class TenantManager
 {

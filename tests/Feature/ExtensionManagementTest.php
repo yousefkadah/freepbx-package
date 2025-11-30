@@ -1,10 +1,10 @@
 <?php
 
-namespace Yousef\FreePbx\Tests\Feature;
+namespace yousefkadah\FreePbx\Tests\Feature;
 
-use Yousef\FreePbx\Tests\TestCase;
-use Yousef\FreePbx\Client\FreePbxClient;
-use Yousef\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Tests\TestCase;
+use yousefkadah\FreePbx\Client\FreePbxClient;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
 
 class ExtensionManagementTest extends TestCase
 {

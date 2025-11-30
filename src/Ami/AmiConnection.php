@@ -1,14 +1,14 @@
 <?php
 
-namespace Yousef\FreePbx\Ami;
+namespace yousefkadah\FreePbx\Ami;
 
 use React\EventLoop\Loop;
 use React\Promise\Deferred;
 use React\Socket\ConnectionInterface;
 use React\Socket\Connector;
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Ami\Events\AmiEventHandler;
-use Yousef\FreePbx\Exceptions\AmiException;
+use yousefkadah\FreePbx\Ami\Events\AmiEventHandler;
+use yousefkadah\FreePbx\Exceptions\AmiException;
 
 class AmiConnection
 {

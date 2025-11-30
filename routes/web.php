@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Yousef\FreePbx\Http\Controllers\DashboardController;
+use yousefkadah\FreePbx\Http\Controllers\DashboardController;
 
 Route::prefix('freepbx')->middleware(['web'])->group(function () {
     Route::get('/dashboard', function () {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Yousef\FreePbx\Dashboard;
+namespace yousefkadah\FreePbx\Dashboard;
 
 use Illuminate\Support\Facades\Cache;
-use Yousef\FreePbx\Ami\AmiManager;
-use Yousef\FreePbx\Client\FreePbxClient;
-use Yousef\FreePbx\Dashboard\Metrics\AgentMetrics;
-use Yousef\FreePbx\Dashboard\Metrics\QueueMetrics;
+use yousefkadah\FreePbx\Ami\AmiManager;
+use yousefkadah\FreePbx\Client\FreePbxClient;
+use yousefkadah\FreePbx\Dashboard\Metrics\AgentMetrics;
+use yousefkadah\FreePbx\Dashboard\Metrics\QueueMetrics;
 
 class DashboardService
 {

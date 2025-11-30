@@ -1,6 +1,6 @@
 <?php
 
-namespace Yousef\FreePbx\Exceptions;
+namespace yousefkadah\FreePbx\Exceptions;
 
 use Exception;
 

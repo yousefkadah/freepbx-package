@@ -1,18 +1,18 @@
 <?php
 
-namespace Yousef\FreePbx\Facades;
+namespace yousefkadah\FreePbx\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Yousef\FreePbx\Client\Resources\ExtensionResource extensions()
- * @method static \Yousef\FreePbx\Client\Resources\QueueResource queues()
+ * @method static \yousefkadah\FreePbx\Client\Resources\ExtensionResource extensions()
+ * @method static \yousefkadah\FreePbx\Client\Resources\QueueResource queues()
  * @method static mixed get(string $endpoint, array $params = [])
  * @method static mixed post(string $endpoint, array $data = [])
  * @method static mixed put(string $endpoint, array $data = [])
  * @method static mixed delete(string $endpoint)
  *
- * @see \Yousef\FreePbx\Client\FreePbxClient
+ * @see \yousefkadah\FreePbx\Client\FreePbxClient
  */
 class FreePbx extends Facade
 {

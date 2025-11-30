@@ -1,11 +1,11 @@
 <?php
 
-namespace Yousef\FreePbx\Webhooks;
+namespace yousefkadah\FreePbx\Webhooks;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Log;
-use Yousef\FreePbx\Jobs\DispatchWebhookJob;
-use Yousef\FreePbx\Webhooks\WebhookEvent;
+use yousefkadah\FreePbx\Jobs\DispatchWebhookJob;
+use yousefkadah\FreePbx\Webhooks\WebhookEvent;
 
 class WebhookDispatcher
 {
