@@ -1,0 +1,135 @@
+/* FreePBX Call Popup Styles */
+
+.freepbx-call-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.3s ease-in-out;
+}
+
+.freepbx-call-popup.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.freepbx-call-popup-content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    min-width: 320px;
+    max-width: 400px;
+    overflow: hidden;
+    border-left: 4px solid #10b981;
+}
+
+.freepbx-call-popup-header {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #fff;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.freepbx-call-popup-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.freepbx-call-popup-close {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.freepbx-call-popup-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.freepbx-call-popup-body {
+    padding: 20px;
+}
+
+.freepbx-call-info {
+    text-align: center;
+}
+
+.freepbx-caller-id {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.freepbx-phone-number {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.freepbx-contact-info {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.freepbx-contact-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.freepbx-contact-company {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.freepbx-contact-email {
+    font-size: 14px;
+    color: #3b82f6;
+}
+
+.freepbx-call-popup-footer {
+    background: #f9fafb;
+    padding: 12px 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.freepbx-call-popup-footer small {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+/* Animation for ringing effect */
+@keyframes ring {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+
+.freepbx-call-popup.show .freepbx-call-popup-content {
+    animation: ring 1s ease-in-out infinite;
+}
