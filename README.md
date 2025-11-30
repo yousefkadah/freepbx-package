@@ -286,10 +286,10 @@ stdout_logfile=/var/log/freepbx-ami.log
 
 The package dispatches several Laravel events:
 
-- `Yousef\FreePbx\Events\IncomingCallEvent` - When an incoming call is detected
-- `Yousef\FreePbx\Events\Ami\NewchannelEvent` - When a new channel is created
-- `Yousef\FreePbx\Events\Ami\QueueMemberStatusEvent` - When queue member status changes
-- `Yousef\FreePbx\Events\Ami\GenericAmiEvent` - For all other AMI events
+- `yousefkadah\FreePbx\Events\IncomingCallEvent` - When an incoming call is detected
+- `yousefkadah\FreePbx\Events\Ami\NewchannelEvent` - When a new channel is created
+- `yousefkadah\FreePbx\Events\Ami\QueueMemberStatusEvent` - When queue member status changes
+- `yousefkadah\FreePbx\Events\Ami\GenericAmiEvent` - For all other AMI events
 
 Listen to events in your `EventServiceProvider`:
 

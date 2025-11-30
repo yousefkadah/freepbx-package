@@ -43,4 +43,4 @@ All notable changes to `freepbx-laravel-integrator` will be documented in this f
 - react/event-loop: ^1.4
 - react/promise: ^3.0
 
-[1.0.0]: https://github.com/yousef/freepbx-laravel-integrator/releases/tag/v1.0.0
+[1.0.0]: https://github.com/yousefkadah/freepbx-laravel-integrator/releases/tag/v1.0.0
