@@ -1,5 +1,5 @@
 {
-    "name": "yousef/freepbx-laravel-integrator",
+    "name": "yousefkadah/freepbx-laravel-integrator",
     "description": "A comprehensive Laravel package for integrating FreePBX telephony features into SaaS CRM applications with full multi-tenant support",
     "keywords": [
         "laravel",
