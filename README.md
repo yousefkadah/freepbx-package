@@ -1,7 +1,7 @@
 # FreePBX Laravel Integrator
 
-[![Latest Version](https://img.shields.io/packagist/v/yousef/freepbx-laravel-integrator.svg)](https://packagist.org/packages/yousef/freepbx-laravel-integrator)
-[![License](https://img.shields.io/packagist/l/yousef/freepbx-laravel-integrator.svg)](https://packagist.org/packages/yousef/freepbx-laravel-integrator)
+[![Latest Version](https://img.shields.io/packagist/v/yousefkadah/freepbx-laravel-integrator.svg)](https://packagist.org/packages/yousefkadah/freepbx-laravel-integrator)
+[![License](https://img.shields.io/packagist/l/yousefkadah/freepbx-laravel-integrator.svg)](https://packagist.org/packages/yousefkadah/freepbx-laravel-integrator)
 
 A comprehensive Laravel package for integrating FreePBX telephony features into SaaS CRM applications with full multi-tenant support.
 
@@ -28,7 +28,7 @@ A comprehensive Laravel package for integrating FreePBX telephony features into 
 Install the package via Composer:
 
 ```bash
-composer require yousef/freepbx-laravel-integrator
+composer require yousefkadah/freepbx-laravel-integrator
 ```
 
 Publish the configuration file:
@@ -88,7 +88,7 @@ FREEPBX_WEBHOOK_SECRET=your-webhook-secret
 ### 1. Managing Extensions
 
 ```php
-use Yousef\FreePbx\Facades\FreePbx;
+use yousefkadah\FreePbx\Facades\FreePbx;
 
 // List all extensions
 $extensions = FreePbx::extensions()->list();
@@ -115,8 +115,8 @@ FreePbx::extensions()->delete('1005');
 ### 2. Click-to-Call
 
 ```php
-use Yousef\FreePbx\Ami\Actions\OriginateAction;
-use Yousef\FreePbx\Ami\AmiManager;
+use yousefkadah\FreePbx\Ami\Actions\OriginateAction;
+use yousefkadah\FreePbx\Ami\AmiManager;
 
 $amiManager = app(AmiManager::class);
 $connection = $amiManager->getConnection();
@@ -211,8 +211,8 @@ protected function schedule(Schedule $schedule)
 Dispatch webhook events:
 
 ```php
-use Yousef\FreePbx\Webhooks\WebhookDispatcher;
-use Yousef\FreePbx\Webhooks\WebhookEvent;
+use yousefkadah\FreePbx\Webhooks\WebhookDispatcher;
+use yousefkadah\FreePbx\Webhooks\WebhookEvent;
 
 $dispatcher = app(WebhookDispatcher::class);
 
@@ -231,7 +231,7 @@ $dispatcher->dispatch('https://your-app.com/webhook', $event);
 ### Setting Tenant Context
 
 ```php
-use Yousef\FreePbx\Tenancy\TenantManager;
+use yousefkadah\FreePbx\Tenancy\TenantManager;
 
 $tenantManager = app(TenantManager::class);
 $tenantManager->setTenant('tenant-123');
@@ -295,7 +295,7 @@ Listen to events in your `EventServiceProvider`:
 
 ```php
 protected $listen = [
-    \Yousef\FreePbx\Events\IncomingCallEvent::class => [
+    \yousefkadah\FreePbx\Events\IncomingCallEvent::class => [
         \App\Listeners\LogIncomingCall::class,
     ],
 ];
